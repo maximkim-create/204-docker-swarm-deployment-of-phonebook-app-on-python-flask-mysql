@@ -50,8 +50,8 @@ curl -o "init.sql" -L ${GIT_FILE_URL}init.sql
 docker-compose config | docker stack deploy --with-registry-auth -c - phonebook
 - ECR_REGISTRY: !Sub ${AWS::AccountId}.dkr.ecr.${AWS::Region}.amazonaws.com
   APP_REPO_NAME: clarusway-repo/phonebook-app
-  GITHUB_REPO: https://github.com/callahan-cw/203.git
-  GIT_FILE_URL: https://raw.githubusercontent.com/callahan-cw/203/master/
+  GITHUB_REPO: https://github.com/maximkim-create/204-docker-swarm-deployment-of-phonebook-app-on-python-flask-mysql.git
+  GIT_FILE_URL: https://raw.githubusercontent.com/maximkim-create/204-docker-swarm-deployment-of-phonebook-app-on-python-flask-mysql/master/
 # Manager Nodes
 #! /bin/bash
 yum update -y
